@@ -185,28 +185,6 @@ Observations:
 
  
 
-🧬 Hexdump: Raw Memory
-
-The hexdump of the object file shows the opcodes in raw memory:
-
- 
-00000000: 7f45 4c46 0201 0100 0000 0000 0000 0000  .ELF............
-...
-00000050: 2003 80d2 4101 80d2 0100 8b01 a200 80d2   ...A..........
-00000060: 0200 cb01 4301 80d2 04c3 0809 a508 030b  ....C...........
-...
- 
-
-At the end of the .text section, the raw ASCII bytes for "30\n" are clearly visible:
-
- 
-00000178: 33 30 0a                                 30.
- 
-
-This confirms that the string was correctly encoded in memory.
-
- 
-
 🧠 Why MSUB is Special (Important Insight)
 
 In many architectures, calculating a remainder requires a separate MOD instruction. ARM64 uses MSUB (Multiply-Subtract) to compute the remainder in a single instruction:
