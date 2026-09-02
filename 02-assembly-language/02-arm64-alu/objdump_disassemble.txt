@@ -1,0 +1,29 @@
+
+arithmetic_division:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000210158 <_start>:
+  210158: d2800320     	mov	x0, #0x19               // =25
+  21015c: d2800141     	mov	x1, #0xa                // =10
+  210160: 8b010000     	add	x0, x0, x1
+  210164: d28000a2     	mov	x2, #0x5                // =5
+  210168: cb020000     	sub	x0, x0, x2
+  21016c: d2800143     	mov	x3, #0xa                // =10
+  210170: 9ac30804     	udiv	x4, x0, x3
+  210174: 9b038085     	msub	x5, x4, x3, x0
+  210178: 9100c084     	add	x4, x4, #0x30
+  21017c: 9100c0a5     	add	x5, x5, #0x30
+  210180: d10043ff     	sub	sp, sp, #0x10
+  210184: 390003e4     	strb	w4, [sp]
+  210188: 390007e5     	strb	w5, [sp, #0x1]
+  21018c: d2800146     	mov	x6, #0xa                // =10
+  210190: 39000be6     	strb	w6, [sp, #0x2]
+  210194: d2800020     	mov	x0, #0x1                // =1
+  210198: 910003e1     	mov	x1, sp
+  21019c: d2800062     	mov	x2, #0x3                // =3
+  2101a0: d2800808     	mov	x8, #0x40               // =64
+  2101a4: d4000001     	svc	#0
+  2101a8: d2800ba8     	mov	x8, #0x5d               // =93
+  2101ac: d2800000     	mov	x0, #0x0                // =0
+  2101b0: d4000001     	svc	#0

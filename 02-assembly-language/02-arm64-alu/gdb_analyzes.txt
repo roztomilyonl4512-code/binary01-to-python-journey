@@ -1,0 +1,84 @@
+(gdb) stepi
+0x00000000002101ac in _start ()
+(gdb) i r
+x0             0x3                 3
+x1             0x7fffffe2a0        549755806368
+x2             0x3                 3
+x3             0xa                 10
+x4             0x33                51
+x5             0x30                48
+x6             0xa                 10
+x7             0x0                 0
+x8             0x5d                93
+x9             0x0                 0
+x10            0x0                 0
+x11            0x0                 0
+x12            0x0                 0
+x13            0x0                 0
+x14            0x0                 0
+x15            0x0                 0
+x16            0x0                 0
+x17            0x0                 0
+x18            0x0                 0
+x19            0x0                 0
+x20            0x0                 0
+--Type <RET> for more, q to quit, c to continue without paging--
+x21            0x0                 0
+x22            0x0                 0
+x23            0x0                 0
+x24            0x0                 0
+x25            0x0                 0
+x26            0x0                 0
+x27            0x0                 0
+x28            0x0                 0
+x29            0x0                 0
+x30            0x0                 0
+sp             0x7fffffe2a0        0x7fffffe2a0
+pc             0x2101ac            0x2101ac <_start+84>
+cpsr           0x201000            [ EL=0 BTYPE=0 SSBS SS ]
+fpsr           0x0                 [ ]
+fpcr           0x0                 [ Len=0 Stride=0 RMode=0 ]
+tpidr          0x0                 0x0
+(gdb) stepi
+0x00000000002101b0 in _start ()
+(gdb) i r
+x0             0x0                 0
+x1             0x7fffffe2a0        549755806368
+x2             0x3                 3
+x3             0xa                 10
+x4             0x33                51
+x5             0x30                48
+x6             0xa                 10
+x7             0x0                 0
+x8             0x5d                93
+x9             0x0                 0
+x10            0x0                 0
+x11            0x0                 0
+x12            0x0                 0
+x13            0x0                 0
+x14            0x0                 0
+x15            0x0                 0
+x16            0x0                 0
+x17            0x0                 0
+x18            0x0                 0
+x19            0x0                 0
+x20            0x0                 0
+--Type <RET> for more, q to quit, c to continue without paging--
+x21            0x0                 0
+x22            0x0                 0
+x23            0x0                 0
+x24            0x0                 0
+x25            0x0                 0
+x26            0x0                 0
+x27            0x0                 0
+x28            0x0                 0
+x29            0x0                 0
+x30            0x0                 0
+sp             0x7fffffe2a0        0x7fffffe2a0
+pc             0x2101b0            0x2101b0 <_start+88>
+cpsr           0x201000            [ EL=0 BTYPE=0 SSBS SS ]
+fpsr           0x0                 [ ]
+fpcr           0x0                 [ Len=0 Stride=0 RMode=0 ]
+tpidr          0x0                 0x0
+(gdb) stepi
+[Inferior 1 (process 20590) exited normally]
