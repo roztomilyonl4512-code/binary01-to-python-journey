@@ -1,0 +1,30 @@
+
+concat_strings.o:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000000000 <_start>:
+       0: 58000240     	ldr	x0, 0x48 <_start+0x48>
+       4: 58000261     	ldr	x1, 0x50 <_start+0x50>
+       8: 58000283     	ldr	x3, 0x58 <_start+0x58>
+       c: d10083ff     	sub	sp, sp, #0x20
+      10: f90003e0     	str	x0, [sp]
+      14: f90007e1     	str	x1, [sp, #0x8]
+      18: f9000be3     	str	x3, [sp, #0x10]
+      1c: d2800144     	mov	x4, #0xa                // =10
+      20: 390063e4     	strb	w4, [sp, #0x18]
+      24: d2800020     	mov	x0, #0x1                // =1
+      28: 910003e1     	mov	x1, sp
+      2c: d2800322     	mov	x2, #0x19               // =25
+      30: d2800808     	mov	x8, #0x40               // =64
+      34: d4000001     	svc	#0
+      38: 910083ff     	add	sp, sp, #0x20
+      3c: d2800ba8     	mov	x8, #0x5d               // =93
+      40: d2800000     	mov	x0, #0x0                // =0
+      44: d4000001     	svc	#0
+      48: 4c 65 61 72  	.word	0x7261654c
+      4c: 6e 69 6e 67  	.word	0x676e696e
+      50: 20 53 74 61  	.word	0x61745320
+      54: 63 6b 20 00  	.word	0x00206b63
+      58: 4f 76 65 72  	.word	0x7265764f
+      5c: 66 6c 6f 77  	.word	0x776f6c66

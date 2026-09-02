@@ -1,0 +1,187 @@
+GNU gdb (GDB) 13.2
+Reading symbols from ./concat_strings...
+(No debugging symbols found in ./concat_strings)
+
+(gdb) break _start
+Breakpoint 1 at 0x210158
+
+(gdb) run
+Starting program: /path/to/concat_strings
+
+Breakpoint 1, 0x0000000000210158 in _start ()
+
+(gdb) stepi
+0x000000000021015c in _start ()
+(gdb) info registers
+x0             0x0                 0
+x1             0x0                 0
+x2             0x0                 0
+x3             0x0                 0
+x4             0x0                 0
+sp             0x7fffffe270        0x7fffffe270
+pc             0x21015c            0x21015c <_start+4>
+cpsr           0x200000            [ EL=0 BTYPE=0 ]
+
+(gdb) stepi
+0x0000000000210160 in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x0                 0
+x2             0x0                 0
+x3             0x0                 0
+x4             0x0                 0
+sp             0x7fffffe270        0x7fffffe270
+pc             0x210160            0x210160 <_start+8>
+
+(gdb) stepi
+0x0000000000210164 in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x206b6361745320    2332068921126301472
+x2             0x0                 0
+x3             0x0                 0
+x4             0x0                 0
+sp             0x7fffffe270        0x7fffffe270
+pc             0x210164            0x210164 <_start+12>
+
+(gdb) stepi
+0x0000000000210168 in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x206b6361745320    2332068921126301472
+x2             0x0                 0
+x3             0x776f6c667265764f  8606216600190023247
+x4             0x0                 0
+sp             0x7fffffe270        0x7fffffe270
+pc             0x210168            0x210168 <_start+16>
+
+(gdb) stepi
+0x000000000021016c in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x206b6361745320    2332068921126301472
+x2             0x0                 0
+x3             0x776f6c667265764f  8606216600190023247
+x4             0x0                 0
+sp             0x7fffffe250        0x7fffffe250
+pc             0x21016c            0x21016c <_start+20>
+
+(gdb) stepi
+0x0000000000210170 in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x206b6361745320    2332068921126301472
+x2             0x0                 0
+x3             0x776f6c667265764f  8606216600190023247
+x4             0x0                 0
+sp             0x7fffffe250        0x7fffffe250
+pc             0x210170            0x210170 <_start+24>
+
+(gdb) stepi
+0x0000000000210174 in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x206b6361745320    2332068921126301472
+x2             0x0                 0
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+sp             0x7fffffe250        0x7fffffe250
+pc             0x210174            0x210174 <_start+28>
+
+(gdb) stepi
+0x0000000000210178 in _start ()
+(gdb) info registers
+x0             0x676e696e7261654c  7433050920395807052
+x1             0x206b6361745320    2332068921126301472
+x2             0x0                 0
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+sp             0x7fffffe250        0x7fffffe250
+pc             0x210178            0x210178 <_start+32>
+
+(gdb) stepi
+0x000000000021017c in _start ()
+(gdb) info registers
+x0             0x1                 1
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+sp             0x7fffffe250        0x7fffffe250
+pc             0x21017c            0x21017c <_start+36>
+
+(gdb) stepi
+0x0000000000210180 in _start ()
+(gdb) info registers
+x0             0x1                 1
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+x8             0x40                64
+sp             0x7fffffe250        0x7fffffe250
+pc             0x210180            0x210180 <_start+40>
+
+(gdb) stepi
+Learning Stack Overflow
+0x0000000000210184 in _start ()
+(gdb) info registers
+x0             0x1                 1
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+x8             0x40                64
+sp             0x7fffffe250        0x7fffffe250
+pc             0x210184            0x210184 <_start+44>
+
+(gdb) stepi
+0x0000000000210188 in _start ()
+(gdb) info registers
+x0             0x1                 1
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+x8             0x5d                93
+sp             0x7fffffe270        0x7fffffe270
+pc             0x210188            0x210188 <_start+48>
+
+(gdb) stepi
+0x000000000021018c in _start ()
+(gdb) info registers
+x0             0x0                 0
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+x8             0x5d                93
+sp             0x7fffffe270        0x7fffffe270
+pc             0x21018c            0x21018c <_start+52>
+
+(gdb) stepi
+0x0000000000210190 in _start ()
+(gdb) info registers
+x0             0x0                 0
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+x8             0x5d                93
+sp             0x7fffffe270        0x7fffffe270
+pc             0x210190            0x210190 <_start+56>
+
+(gdb) stepi
+0x0000000000210194 in _start ()
+(gdb) info registers
+x0             0x0                 0
+x1             0x7fffffe250        549755806288
+x2             0x19                25
+x3             0x776f6c667265764f  8606216600190023247
+x4             0xa                 10
+x8             0x5d                93
+sp             0x7fffffe270        0x7fffffe270
+pc             0x210194            0x210194 <_start+60>
+
+(gdb) stepi
+[Inferior 1 (process 12345) exited normally]
